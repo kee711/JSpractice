@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSpractice</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="alert-box" id="alert1">
+            <p id="alertcontent">뿅!!!</p> 
+            <button onclick="showhideAlert('none')">누르면 없어져</button>
+        </div>
+
+        <button onclick="showhideAlert('block')">눌러봐</button>
+        <button onclick="makeAlert('두둥탁'); showhideAlert('block')" >이것도 눌러봐</button>
+        
+        
+        <script>
+            function makeAlert(content) {
+                document.getElementById("alertcontent").innerHTML = content;
+            }
+            function showhideAlert(dis) {
+                document.getElementById("alert1").style.display = dis;
+            }
+        </script>
+
+    </body>
+</html>
